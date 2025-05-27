@@ -1,9 +1,11 @@
+/* Reseta o padding, margin e box-sizing */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Body com fundo dinâmico */
 body {
   height: 100vh;
   font-family: Arial, sans-serif;
@@ -12,18 +14,98 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 
+/* Header sem alteração */
 header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin: 20px;
+  position: relative;
 }
 
+/* Imagem do logo */
 header img {
   max-width: 350px;
   height: auto;
+}
+
+/* Botão de alternância de tema */
+#theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 60px;
+  height: 30px;
+  background-color: #E90000; /* Cor inicial para o tema claro */
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.4rem;
+  transition: background-color 0.5s ease, transform 0.3s ease;
+}
+
+#theme-toggle i {
+  position: absolute;
+  top: 15%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  user-select: none;
+}
+
+#theme-toggle .fa-sun {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+#theme-toggle.dark .fa-sun {
+  transform: translateX(-90%); /* Faz o fade out do sol */
+  opacity: 0;
+}
+
+#theme-toggle .fa-moon {
+  transform: translateX(150%); /* Faz o fade out da lua */
+  opacity: 0;
+}
+
+#theme-toggle.dark .fa-moon {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* Tema escuro */
+body.dark-theme {
+  background: linear-gradient(90deg, #222 0%, #444 50%, #666 100%);
+  /* color: #eee; */
+}
+
+body.dark-theme footer {
+  color: #ccc;
+}
+
+body.dark-theme .container {
+  background-color: #333;
+  color: #eee;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-theme input {
+  background-color: #555;
+  color: #eee;
+  border: 1px solid #888;
+}
+
+body.dark-theme button {
+  background-color: #555;
+  color: #eee;
+}
+
+/* Cor do botão para o tema escuro */
+#theme-toggle.dark {
+  background-color: #222; /* Cor de fundo para o botão no tema escuro */
 }
 
 .container {
@@ -35,7 +117,7 @@ header img {
   flex-direction: column;
   align-items: center;
   width: 500px;
-  max-width: 100vw; 
+  max-width: 100vw;
 }
 
 .container h1 {
@@ -68,7 +150,7 @@ header img {
 }
 
 footer {
-  margin-top: 90px;
+  margin-top: 80px;
   color: white;
   font-weight: bold;
 }
