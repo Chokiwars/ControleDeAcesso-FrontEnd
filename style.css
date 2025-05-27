@@ -5,31 +5,9 @@
   box-sizing: border-box;
 }
 
-/* Body com fundo dinâmico */
 body {
-  height: 100vh;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(90deg, rgba(104, 20, 19, 1) 0%, rgba(154, 25, 21, 1) 50%, rgba(227, 6, 19, 1) 100%);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background: linear-gradient(90deg, rgba(104, 20, 19, 1) 0%, rgba(154, 25, 21, 1) 50%, rgb(227, 6, 19) 100%);
   transition: background-color 0.5s ease, color 0.5s ease;
-}
-
-/* Header sem alteração */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 20px;
-  position: relative;
-}
-
-/* Imagem do logo */
-header img {
-  max-width: 350px;
-  height: auto;
 }
 
 /* Botão de alternância de tema */
@@ -39,7 +17,8 @@ header img {
   right: 20px;
   width: 60px;
   height: 30px;
-  background-color: #E90000; /* Cor inicial para o tema claro */
+  background-color: var(--vermelhoSenai);
+  /* Cor inicial para o tema claro */
   border-radius: 30px;
   border: none;
   cursor: pointer;
@@ -62,12 +41,14 @@ header img {
 }
 
 #theme-toggle.dark .fa-sun {
-  transform: translateX(-90%); /* Faz o fade out do sol */
+  transform: translateX(-90%);
+  /* Faz o fade out do sol */
   opacity: 0;
 }
 
 #theme-toggle .fa-moon {
-  transform: translateX(150%); /* Faz o fade out da lua */
+  transform: translateX(150%);
+  /* Faz o fade out da lua */
   opacity: 0;
 }
 
@@ -76,81 +57,52 @@ header img {
   opacity: 1;
 }
 
-/* Tema escuro */
-body.dark-theme {
-  background: linear-gradient(90deg, #222 0%, #444 50%, #666 100%);
-  /* color: #eee; */
-}
+/* ================================================================== */
 
-body.dark-theme footer {
-  color: #ccc;
-}
-
-body.dark-theme .container {
-  background-color: #333;
-  color: #eee;
-  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
-}
-
-body.dark-theme input {
-  background-color: #555;
-  color: #eee;
-  border: 1px solid #888;
-}
-
-body.dark-theme button {
-  background-color: #555;
-  color: #eee;
-}
+/* TEMA ESCURO */
 
 /* Cor do botão para o tema escuro */
 #theme-toggle.dark {
-  background-color: #222; /* Cor de fundo para o botão no tema escuro */
+  background-color: #222;
+  /* Cor de fundo para o botão no tema escuro */
 }
 
-.container {
-  background-color: white;
-  padding: 40px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 500px;
-  max-width: 100vw;
+body.dark-theme {
+  background: linear-gradient(90deg, #000000 0%, #555555 100%);
 }
 
-.container h1 {
-  margin-bottom: 20px;
-  color: #333;
+body.dark-theme .container {
+  background-color: #212121;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.container label {
-  align-self: flex-start;
-  margin-bottom: 5px;
-  color: #555;
+body.dark-theme .container h1,
+body.dark-theme .container label,
+body.dark-theme footer  {
+  color: var(--textoBranco);
 }
 
-.container input {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.container button {
-  padding: 10px 20px;
-  background-color: #E90000;
-  color: white;
+body.dark-theme input {
+  background-color: #363636;
+  color: #eee;
   border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  width: 100%;
+}
+
+body.dark-theme button {
+  background-color: var(--vermelhoSenai);
+  color: #eee;
 }
 
 footer {
   margin-top: 80px;
   color: white;
   font-weight: bold;
+}
+
+/* =====================
+        VARIÁVEIS
+===================== */
+:root {
+  --textoBranco: white;
+  --vermelhoSenai: #E90000;
 }
