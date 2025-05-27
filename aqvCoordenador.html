@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AQV/Coordenador - Controle de Acesso</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        header {
+            display: flex;
+            font-size: 2.5rem;
+            color: white;
+            height: 100px;
+            width: 100%;
+        }
+
+        h2 {
+            font-size: 3rem;
+            display: flex;
+            margin-left: 150px;
+            padding: 50px;
+            /* margin: 20px; */
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            border: solid blue;
+        }
+
+        .graficos {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+            height: 400px;
+            width: 600px;
+        }
+
+        .botoesLaterais {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+            height: 400px;
+            width: 600px;
+            gap: 10px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+        }
+
+
+
+    </style>
+</head>
+
+<header>
+    <img src="Imagens/senaiLogo.png" alt="SENAI">
+    <h1> | ANCHIETA</h1>
+</header>
+
+<h2>Olá, *nomeUsuario*</h2>
+
+<body>
+    <button id="theme-toggle" aria-label="Alternar tema">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+    </button>
+
+    <main>
+        <div class="container">
+            <section class="graficos">
+                <h3>Dia *dataDia*, *horaAtual*</h3>
+                <img src="Imagens/" alt="graficoPizza">
+                <img src="Imagens/" alt="graficoBarra">
+            </section>
+
+            <section class="botoesLaterais">
+                <div class="card">
+                    <h3>Acesso de Alunos</h3>
+                    <h4>Ver requisições dos alunos atrasados</h4>
+                    <button onclick="" type="button">Ver requisições</button>
+                </div>
+                <div class="card">
+                    <h3>Cadastrar</h3>
+                    <h4>Ver requisições dos alunos atrasados</h4>
+                    <button onclick="" type="button">Ver requisições</button>
+                </div>
+                <div class="card">
+                    <h3>Exibir Lista</h3>
+                    <h4>Ver requisições dos alunos atrasados</h4>
+                    <button onclick="" type="button">Ver requisições</button>
+                </div>
+                <div class="card">
+                    <h3>Horário</h3>
+                    <h4>Ver requisições dos alunos atrasados</h4>
+                    <button onclick="" type="button">Ver requisições</button>
+                </div>
+                <div class="card">
+                    <h3>Configurações</h3>
+                    <h4>Ver requisições dos alunos atrasados</h4>
+                    <button onclick="" type="button">Ver requisições</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <h4>© SENAI-SP - 2025</h4>
+    </footer>
+
+    <h3><a href="index.html">Login</a></h3>
+    <h3><a href="aqvCoordenador.html">aqvCoordenador</a></h3>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
