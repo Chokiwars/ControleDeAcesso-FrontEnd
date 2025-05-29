@@ -15,6 +15,7 @@
             color: white;
             height: 100px;
             width: 100%;
+            margin: 15px;
         }
 
         h2 {
@@ -22,7 +23,6 @@
             display: flex;
             margin-left: 150px;
             padding: 50px;
-            /* margin: 20px; */
             color: white;
         }
 
@@ -37,13 +37,33 @@
 
         .graficos {
             background-color: white;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
             border-radius: 15px;
             height: 400px;
             width: 600px;
+        }
+
+        .graficos h3 {
+            font-size: 2rem;
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            margin-right: 100px;
+            z-index: 0;
+        }
+
+        #graficoPizza img {
+            height: 100px;
+            width: 150px;
+            margin-left: 450px;
+            z-index: 1;
+        }
+
+        #graficoBarra img {
+            height: 210px;
+            width: 550px;
+            margin-left: 25px;
+            z-index: 2
+            ;
         }
 
         .botoesLaterais {
@@ -66,9 +86,6 @@
             justify-content: center;
             border-radius: 15px;
         }
-
-
-
     </style>
 </head>
 
@@ -87,11 +104,13 @@
 
     <main>
         <div class="container">
-            <section class="graficos">
-                <h3>Dia *dataDia*, *horaAtual*</h3>
-                <img src="Imagens/" alt="graficoPizza">
-                <img src="Imagens/" alt="graficoBarra">
-            </section>
+            <div class="graficos">
+                <section id="dataHora">
+                    <h3>Dia *dataDia*, *horaAtual*</h3>
+                </section>
+                <section id="graficoPizza"><img src="Imagens/graficoPizza provisorio.jpg" alt="graficoPizza"></section>
+                <section id="graficoBarra"><img src="Imagens/graficoBarra provisorio.jpg" alt="graficoBarra"></section>
+            </div>
 
             <section class="botoesLaterais">
                 <div class="card">
