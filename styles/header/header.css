@@ -1,0 +1,40 @@
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px;
+  position: relative;
+}
+
+.logo-senai{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: 10vh;
+}
+
+.line-header{
+  border: 1px solid #fff;
+  height: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.line{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.logo-senai h1{
+  font-size: 3rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Imagem do logo */
+.logo-senai img {
+  max-width: 350px;
+  height: 100%;
+}
