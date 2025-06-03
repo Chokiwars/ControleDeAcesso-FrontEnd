@@ -1,0 +1,117 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+
+body{
+    background: linear-gradient(90deg, rgba(104, 20, 19, 1) 0%, rgba(154, 25, 21, 1) 50%, rgb(227, 6, 19) 100%);
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+#senaiLogo{
+    width: 200px;
+    height: 60px;
+}
+
+#divisao{
+    background-color: white;
+    margin: 6px;
+    width: 3px;
+    height: 60px;
+}
+
+#texto-escola{
+    font-size: 49px;
+    margin-top: 10px;
+    /* margin-bottom: 25px; */
+    font-weight: bold;
+    color: white;
+}
+
+
+
+ul{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    /* background-color: blue; */
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    height: 80px;
+}
+
+#menu{
+    width: 10%;
+    /* background-color: aquamarine; */
+}
+
+#logo{
+    width: 50%;
+    /* background-color: green; */
+}
+
+#nomeUsuario{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    width: 20%;
+    /* background-color: blueviolet; */
+}
+
+#imagemUser{
+    width: 30px;
+    height: 30px;
+
+}
+
+#mudarTema{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: fuchsia; */
+}
+
+
+li{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    /* background-color: rgb(104, 104, 104); */
+}
+
+#botaoMudarTema{
+  width: 60px;
+  height: 30px;
+  background-color: var(--vermelhoSenai);
+  /* Cor inicial para o tema claro */
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.4rem;
+  transition: background-color 0.5s ease, transform 0.3s ease;
+}
+
+#buscarSection{
+    margin-top: 20px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#campoBusca{
+    width: 80%;
+}
+
+#buscar{
+    /* background-color: green; */
+    width: 80%;
+}

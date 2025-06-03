@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/fzh7wjg.css">
+
+    <style>
+        *{
+            font-family: "montserrat", sans-serif;
+        }
+    </style>
+
+    <title>Listagem</title>
+</head>
+<body>
+    <header>
+        <ul>
+            <li id="menu">
+                <div>
+                    <h1>-|-</h1>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </li>
+            <li id="logo">
+                <img src="../Imagens/senaiLogo.png" alt="" id="senaiLogo">
+                <span id="divisao"></span>
+                <h1 id="texto-escola">ANCHIETA</h1>
+            </li>
+            <li id="nomeUsuario">
+                    <img src="../Imagens/anonimo.avif" alt="" id="imagemUser">
+                    <h3>*Nome Usuario*</h3>
+            </li>
+
+            <li id="mudarTema">
+                <button onclick="mudarTema()" id="botaoMudarTema">Mudar tema</button>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section id="buscarSection">
+            <div id="campoBusca">
+                <input type="text" name="busca" id="buscar" placeholder="Buscar">
+                <button type="submit">Enviar</button>
+            </div>
+            
+            <div>
+                <h2>03/06/2025</h2>
+            </div>
+        </section>
+        
+        <section>
+            <ul id="lista">
+                <li>
+                    <div>
+                        <img src="" alt="">
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
