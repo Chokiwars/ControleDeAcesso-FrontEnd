@@ -9,6 +9,10 @@
 body{
     background: linear-gradient(90deg, rgba(104, 20, 19, 1) 0%, rgba(154, 25, 21, 1) 50%, rgb(227, 6, 19) 100%);
   transition: background-color 0.5s ease, color 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 #senaiLogo{
@@ -16,9 +20,16 @@ body{
     height: 60px;
 }
 
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #divisao{
     background-color: white;
-    margin: 6px;
     width: 3px;
     height: 60px;
 }
@@ -52,6 +63,7 @@ ul{
 
 #logo{
     width: 50%;
+    gap: 10px;
     /* background-color: green; */
 }
 
@@ -99,8 +111,10 @@ li{
   transition: background-color 0.5s ease, transform 0.3s ease;
 }
 
-#buscarSection{
+#buscarAticle{
     margin-top: 20px;
+    width: 100%;
+    height: 80px;
     background-color: red;
     display: flex;
     align-items: center;
@@ -108,10 +122,79 @@ li{
 }
 
 #campoBusca{
-    width: 80%;
+    width: 80%;;
+    /* background-color: fuchsia; */
 }
 
 #buscar{
     /* background-color: green; */
-    width: 80%;
+    width: 85%;
+    height: 40px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#botaoBuscarAluno{
+    width: 45px;
+    height: 40px;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+#fundo_tela_listagem{
+    background-color: #727272;
+    width: 90%;
+    height: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    /* background-color: #971c1c; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#tabelaListagem{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+table{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    background-color: rgb(88, 88, 88);
+    border-collapse: collapse;
+}
+
+th{
+    padding: 10px;
+    width: 1000px;
+    background-color: rgb(197, 197, 197);
+}
+
+tr{
+    padding: 10px;
+    width: 100%;
+}
+
+td{
+    
+    padding: 10px;
+    width: 33%;
+    text-align: center;
 }

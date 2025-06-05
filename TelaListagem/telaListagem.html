@@ -41,28 +41,36 @@
         </ul>
     </header>
     <main>
-        <section id="buscarSection">
-            <div id="campoBusca">
-                <input type="text" name="busca" id="buscar" placeholder="Buscar">
-                <button type="submit">Enviar</button>
-            </div>
-            
-            <div>
-                <h2>03/06/2025</h2>
-            </div>
-        </section>
-        
-        <section>
-            <ul id="lista">
-                <li>
-                    <div>
-                        <img src="" alt="">
-                    </div>
-                </li>
-            </ul>
-        </section>
-    </main>
+        <section id="fundo_tela_listagem">
 
-    <script src="script.js"></script>
-</body>
-</html>
+            <article id="buscarAticle">
+                <div id="campoBusca">
+                    <input type="text" name="busca" id="buscar" placeholder="Buscar">
+                    <button type="submit" id="botaoBuscarAluno" onclick="buscarAlunoPorNome()">></button>
+                </div>
+                    <button onclick="carregarAlunos()">carregar dados</button>
+                <div>
+                    <h2 id="dataAtual">carregando...</h2>
+                </div>
+            </article>
+            
+            <article id="tabelaListagem">
+                <table id="tabela">
+                    <tr>
+                        <th>id</th>
+                        <th>nome</th>
+                        <th>curso</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>João Silva</td>
+                        <td>Desenvolvimento Web</td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+        </main>
+        
+        <script src="script.js"></script>
+    </body>
+    </html>
