@@ -20,16 +20,16 @@
             <li id="menu">
                 <div>
                     <h1>-|-</h1>
-                    <span></span>
-                    <span></span>
-                    <span></span>
+
                 </div>
             </li>
+
             <li id="logo">
                 <img src="../Imagens/senaiLogo.png" alt="" id="senaiLogo">
-                <span id="divisao"></span>
+                <hr id="divisao"></hr>
                 <h1 id="texto-escola">ANCHIETA</h1>
             </li>
+
             <li id="nomeUsuario">
                     <img src="../Imagens/anonimo.avif" alt="" id="imagemUser">
                     <h3>*Nome Usuario*</h3>
@@ -48,24 +48,32 @@
                     <input type="text" name="busca" id="buscar" placeholder="Buscar">
                     <button type="submit" id="botaoBuscarAluno" onclick="buscarAlunoPorNome()">></button>
                 </div>
-                    <button onclick="carregarAlunos()">carregar dados</button>
-                <div>
+                <div id="dataAtual">
                     <h2 id="dataAtual">carregando...</h2>
                 </div>
             </article>
             
             <article id="tabelaListagem">
                 <table id="tabela">
-                    <tr>
+                <tr>
+                        <th id="ponta_1">foto</th>
                         <th>id</th>
                         <th>nome</th>
-                        <th>curso</th>
-                    </tr>
-                    <tr>
+                        <th id="ponta_2">curso</th>                    
+                </tr>
+                <tr class="alunos_div">
+                
+                        <td><img src="/Imagens/anonimo.avif" id="imagemUser" alt=""></td>
                         <td>1</td>
                         <td>João Silva</td>
                         <td>Desenvolvimento Web</td>
-                    </tr>
+                </tr>
+                <tr class="alunos_div">
+                    <td><img src="/Imagens/anonimo.avif" id="imagemUser" alt=""></td>
+                    <td>1</td>
+                    <td>João Silva</td>
+                    <td>Desenvolvimento Web</td>
+                </tr>
                 </table>
             </article>
         </section>

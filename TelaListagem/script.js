@@ -1,7 +1,18 @@
-setInterval(() => {
+setInterval(function () {
     let dataAtual = new Date();
-    document.getElementById("dataAtual").innerHTML = dataAtual.getDate() + "/" + (dataAtual.getMonth() + 1) + "/" + dataAtual.getFullYear() + " " + dataAtual.getHours() + ":" + dataAtual.getMinutes() + ":" + dataAtual.getSeconds();
+
+    let segundos = dataAtual.getSeconds().toString().padStart(2, '0');
+    let minutos = dataAtual.getMinutes().toString().padStart(2, '0');
+    let horas = dataAtual.getHours().toString().padStart(2, '0');
+    let dia = dataAtual.getDate().toString().padStart(2, '0');
+    let mes = (dataAtual.getMonth() + 1).toString().padStart(2, '0');
+    let ano = dataAtual.getFullYear();
+
+    let dataCheia = `${dia}/${mes}/${ano} ${horas}:${minutos}:${segundos}`;
+
+    document.getElementById("dataAtual").innerHTML = dataCheia;
 }, 1000);
+
 
 async function carregarAlunos() {
   const url = "https://localhost:8080/alunos";

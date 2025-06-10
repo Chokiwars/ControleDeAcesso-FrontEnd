@@ -146,7 +146,7 @@ li{
 
 
 #fundo_tela_listagem{
-    background-color: #727272;
+    /* background-color: #727272; */
     width: 90%;
     height: 100%;
     margin-top: 20px;
@@ -177,24 +177,40 @@ table{
     display: flex;
     width: 100%;
     margin-top: 20px;
-    background-color: rgb(88, 88, 88);
+    /* background-color: rgb(88, 88, 88); */
     border-collapse: collapse;
+    border-radius: 20px;
 }
 
 th{
-    padding: 10px;
+    padding: 15px;
     width: 1000px;
-    background-color: rgb(197, 197, 197);
+    background-color: rgb(102, 89, 89);
+}
+
+#ponta_1{
+    border-radius: 20px 0 0 20px;
+}
+#ponta_2{
+    border-radius: 0 20px 20px 0;
 }
 
 tr{
-    padding: 10px;
     width: 100%;
 }
 
 td{
-    
     padding: 10px;
     width: 33%;
     text-align: center;
+}
+
+.alunos_div{
+    display: block;
+    padding: 10px;
+    border-radius: 13px;
+    margin-top: 20px;
+
+    /* color: white; */
+    background-color: #fff;
 }
